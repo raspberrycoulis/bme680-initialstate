@@ -7,9 +7,9 @@ This Python script will pull data from the BME680 and send it to your Initial St
 
 The installer script, created by [Pimoroni](https://shop.pimoroni.com), is simple:
 
-    curl -sS get.pimoroni.com/envirophat | bash
+    curl -sS get.pimoroni.com/bme680 | bash
 
-But full install instructions can be found [here](https://learn.pimoroni.com/tutorial/sandyj/getting-started-with-enviro-phat).
+But full install instructions can be found [here](https://learn.pimoroni.com/tutorial/sandyj/getting-started-with-bme680-breakout).
 
 ### Install the Initial State Python Data Streamer files
 
@@ -22,7 +22,7 @@ You'll need to install the relevant Initial State files, which is done by:
 Simply clone this script by running:
 
     cd ~
-    sudo git clone https://github.com/raspberrycoulis/bme680-initialstate.git
+    git clone https://github.com/raspberrycoulis/bme680-initialstate.git
 
 You'll need to make some changes first, specifically inserting your Access Key (found via Initial State), as well as optionally setting the bucket name and key in the following place:
 
@@ -30,7 +30,7 @@ You'll need to make some changes first, specifically inserting your Access Key (
 
 You can use your preferred text editor, but Nano works just fine:
 
-    sudo nano bme680-initialstate.py
+    nano bme680-initialstate.py
 
 Be sure to save when exiting:
 
@@ -39,7 +39,7 @@ Be sure to save when exiting:
 
 Make the script executable:
 
-    sudo chmod +x bme680-initialstate.py
+    chmod +x bme680-initialstate.py
 
 And then finally test it by running:
 
